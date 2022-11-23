@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body {
+    font-family: 'Overpass', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 1px);
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(0, 0%, 100%);
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.container {
+    background-color: hsl(213, 19%, 18%);
+    max-width: 100%;
+    width: 460px;
+    height: 460px;
+    border-radius: 1.5rem;
+}
+
+.ratingState, .thankYouState {
+    padding: 2.6rem;
+}
+
+.message {
+    color: hsl(217, 12%, 63%);
+    margin-top: 15px;
+    line-height: 1.7;
+}
+
+.appreciation {
+    text-align: center;
+}
+
+.starIcon {
+    width: 50px;
+    height: 50px;
+    background-color: hsl(220, 12%, 24%);
+    border-radius: 50%;
+    margin-bottom: 35px;
+}
+
+.thankYouIconCont {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.mainIcon {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.buttons {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    background-color: hsl(220, 12%, 24%);
+    border-radius: 50%;
+    border: none;
+    color: hsl(218, 15%, 72%);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.btn:focus {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+.submit {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: hsl(25, 97%, 53%);
+    margin-top: 35px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.submit:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.specialTextCont {
+    display: flex;
+    justify-content: center;
+}
+
+.specialText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(220, 12%, 24%);
+    width: 200px;
+    height: 30px;
+    border-radius: 1.25rem;
+    color: hsl(25, 85%, 47%);
+    margin: 26px 0 34px 0;
+}
+
+.thankYouTextCont {
+    display: flex;
+    justify-content: center;
+}
+
+.thankYouText {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (width <= 520px) {
+    .container {
+        width: 330px;
+        height: 330px;
+    }
+
+    .ratingState, .thankYouState {
+        padding: 1rem;
+    }
+
+    .starIcon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 25px;
+    }
+
+    .btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .submit {
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+    }
+
+    .buttons {
+        margin-top: 18px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .message {
+        margin-top: 12px;
+        line-height: 1.5;
+        font-size: 15px;
+    }
+
+    .thankYouIconCont {
+        text-align: center;
+    }
+
+    .thankYouIcon {
+        width: 120px;
+    }
+
+    .thankYouText {
+        font-size: 25px;
+    }
+
+    .specialText {
+        margin: 20px 0 25px 0;
+    }
+}
